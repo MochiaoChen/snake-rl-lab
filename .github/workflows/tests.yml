@@ -1,0 +1,20 @@
+name: tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  macos:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run pytest -q
+      - name: Load the published model and render a real game frame
+        run: uv run python play.py --ai --screenshot /tmp/snake-smoke.png --demo-steps 50

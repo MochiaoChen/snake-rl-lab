@@ -1,0 +1,15 @@
+{
+  "steps": 500000,
+  "out": "runs/v2-global",
+  "seed": 42,
+  "eval_episodes": 50,
+  "resume": null,
+  "interval": 25000,
+  "validation_episodes": 5,
+  "version": "v2",
+  "size": 10,
+  "algorithm": "GlobalDQN",
+  "observation": "full body order + head + food + direction + clocks + topology",
+  "action_mask": "immediate collision only; no route planner",
+  "trainable_parameters": 116483
+}

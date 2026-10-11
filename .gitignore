@@ -1,0 +1,11 @@
+.venv/
+.play-venv/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+runs/
+replay_buffer.pkl
+.DS_Store
+.env
+.env.*
+*.log

@@ -1,0 +1,9 @@
+[project]
+name = "snake-rl-lab"
+version = "0.1.0"
+description = "Train and watch a small DQN play Snake on a Mac"
+requires-python = ">=3.12,<3.13"
+dependencies = ["stable-baselines3>=2.7,<3", "gymnasium>=1.1,<2", "pygame>=2.6,<3", "matplotlib>=3.9,<4"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]

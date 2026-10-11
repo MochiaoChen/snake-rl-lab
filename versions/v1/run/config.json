@@ -1,0 +1,12 @@
+{
+  "steps": 150000,
+  "seed": 42,
+  "size": 10,
+  "out": "runs/first",
+  "resume": null,
+  "eval_episodes": 50,
+  "device": "cpu",
+  "torch_threads": 2,
+  "observation": "11 local features",
+  "trainable_parameters": 18435
+}
