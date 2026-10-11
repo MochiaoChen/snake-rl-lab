@@ -1,0 +1,24 @@
+{
+  "episodes": 10,
+  "seed_start": 50000,
+  "mean_score": 78.2,
+  "median_score": 77.0,
+  "min_score": 67,
+  "max_score": 90,
+  "mean_steps": 7795.4,
+  "scores": [
+    87,
+    77,
+    79,
+    75,
+    77,
+    71,
+    84,
+    75,
+    90,
+    67
+  ],
+  "board_full": 0,
+  "collision": 4,
+  "time_limit": 6
+}

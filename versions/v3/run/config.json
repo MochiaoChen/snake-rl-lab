@@ -1,0 +1,15 @@
+{
+  "steps": 250000,
+  "out": "runs/v3-efficiency",
+  "source": "versions/v2/run/best.zip",
+  "eval_episodes": 50,
+  "version": "v3",
+  "size": 10,
+  "algorithm": "GlobalDQN",
+  "observation": "same full board as v2",
+  "training_only_no_food_limit": 400,
+  "step_cost": 0.05,
+  "test_rules": "original 100*length hunger limit and 10000 step cap",
+  "test_seed_start": 400000,
+  "source_weights_only": true
+}
